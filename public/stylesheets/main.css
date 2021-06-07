@@ -1,0 +1,51 @@
+/* line 2, public/sass/_nav.scss */
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  width: 100%;
+  height: 100px; }
+  /* line 10, public/sass/_nav.scss */
+  .navWrapper .navLinks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    border: 1px solid black; }
+  /* line 19, public/sass/_nav.scss */
+  .navWrapper .navLinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  /* line 26, public/sass/_nav.scss */
+  .navWrapper ul li {
+    margin-right: 30px; }
+  /* line 30, public/sass/_nav.scss */
+  .navWrapper .realtorLogo {
+    width: 200px;
+    height: 80px;
+    object-fit: contain; }
+
+/* line 3, public/sass/main.scss */
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  border: 0px;
+  margin: 0; }
+
+/* line 10, public/sass/main.scss */
+a {
+  color: #00B7FF; }
+
+/* line 15, public/sass/main.scss */
+.mainBackgroundImageWrapper {
+  width: 100%; }
+
+/* line 19, public/sass/main.scss */
+.mainBackgroundImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover; }
