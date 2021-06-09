@@ -1,0 +1,38 @@
+.introductionWrapper {
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    .joseImgWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .joseImg {
+        width: 20rem;
+        clip-path: circle();
+    }
+
+    .joseCompanyImg{
+        width: 20rem;
+    }
+    .introductionName{
+        text-align: left;
+        font-weight: 900;
+    }
+    
+    .joseIntroduction {
+        width: 50%;
+        font-size: 2rem;
+        letter-spacing: 3px;
+        font-weight: 300;
+        line-height: 5rem;
+        text-align: left;
+    }
+
+}
