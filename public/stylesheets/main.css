@@ -56,43 +56,71 @@
     align-items: center;
     font-size: 2rem;
     text-align: center;
-    font-weight: 700;
-    line-height: 5rem; }
+    line-height: 5rem;
+    text-transform: capitalize; }
+  /* line 29, public/sass/_mainBackground.scss */
+  .mainBackgroundImageWrapper .salesPitchBackground {
+    background-color: rgba(190, 190, 190, 0.4);
+    border-radius: 5px;
+    padding: 10px; }
 
 /* line 1, public/sass/_introduction.scss */
 .introductionWrapper {
   padding: 100px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px; }
-  /* line 10, public/sass/_introduction.scss */
+  /* line 9, public/sass/_introduction.scss */
   .introductionWrapper .joseImgWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  /* line 16, public/sass/_introduction.scss */
+  /* line 15, public/sass/_introduction.scss */
   .introductionWrapper .joseImg {
     width: 20rem;
     clip-path: circle(); }
-  /* line 21, public/sass/_introduction.scss */
+  /* line 20, public/sass/_introduction.scss */
   .introductionWrapper .joseCompanyImg {
     width: 20rem; }
-  /* line 24, public/sass/_introduction.scss */
+  /* line 23, public/sass/_introduction.scss */
   .introductionWrapper .introductionName {
     text-align: left;
-    font-weight: 900; }
+    font-weight: 900;
+    font-size: 2.3rem; }
   /* line 29, public/sass/_introduction.scss */
   .introductionWrapper .joseIntroduction {
-    width: 50%;
+    width: 60%;
     font-size: 2rem;
     letter-spacing: 3px;
     font-weight: 300;
     line-height: 5rem;
     text-align: left; }
+  /* line 38, public/sass/_introduction.scss */
+  .introductionWrapper .introductionContactMe {
+    border-top: 3px darkslateblue solid;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    justify-self: flex-end;
+    align-items: flex-start;
+    line-height: normal;
+    font-size: 1.5rem; }
+  /* line 52, public/sass/_introduction.scss */
+  .introductionWrapper .socialMedia {
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; }
+  /* line 60, public/sass/_introduction.scss */
+  .introductionWrapper .socialMediaIcons {
+    width: 50px; }
 
 /* line 5, public/sass/main.scss */
 body {
