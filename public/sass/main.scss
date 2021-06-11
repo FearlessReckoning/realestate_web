@@ -1,6 +1,19 @@
 @import './nav';
 @import './mainBackground';
 @import './introduction';
+@import './territories';
+
+/*
+  Red Highlight: #B73225
+
+  Blue Minded: #004E7C
+
+  Maroon 6: #591COB
+
+  Grey Water: #5C5F58
+
+  Lighter Grey: #DCE1E3
+*/
 
 body {
     font-family: "Open Sans",sans-serif;
@@ -8,6 +21,8 @@ body {
     border: 0px;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    color: #004E7C;
   }
   
 

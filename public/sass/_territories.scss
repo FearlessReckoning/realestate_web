@@ -1,0 +1,32 @@
+.territoriesWrapper{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 300px; /*Delete*/
+    text-align: left;
+
+    .territoriesHeader {
+        border-bottom: 3px solid darkslateblue;
+    }
+
+
+    .territoriesImgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .territoriesImg{
+        width: 400px;
+        height: 300px;
+        border: double 2px black;
+        box-shadow: 10px 10px 30px black;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+
+    .territoriesObject {
+        text-align: center;
+        margin-left: 50px;
+    }
+}
