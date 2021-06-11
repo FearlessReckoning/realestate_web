@@ -11,10 +11,14 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
     }
     .joseImg {
         width: 20rem;
-        clip-path: circle();
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px #B73225;
+        border: 3px double #B73225;
+
     }
 
     .joseCompanyImg{

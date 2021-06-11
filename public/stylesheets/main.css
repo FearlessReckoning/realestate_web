@@ -79,19 +79,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  /* line 15, public/sass/_introduction.scss */
+  /* line 16, public/sass/_introduction.scss */
   .introductionWrapper .joseImg {
     width: 20rem;
-    clip-path: circle(); }
-  /* line 20, public/sass/_introduction.scss */
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #B73225;
+    border: 3px double #B73225; }
+  /* line 24, public/sass/_introduction.scss */
   .introductionWrapper .joseCompanyImg {
     width: 20rem; }
-  /* line 23, public/sass/_introduction.scss */
+  /* line 27, public/sass/_introduction.scss */
   .introductionWrapper .introductionName {
     text-align: left;
     font-weight: 900;
     font-size: 2.3rem; }
-  /* line 29, public/sass/_introduction.scss */
+  /* line 33, public/sass/_introduction.scss */
   .introductionWrapper .joseIntroduction {
     width: 60%;
     font-size: 2rem;
@@ -99,7 +101,7 @@
     font-weight: 300;
     line-height: 5rem;
     text-align: left; }
-  /* line 38, public/sass/_introduction.scss */
+  /* line 42, public/sass/_introduction.scss */
   .introductionWrapper .introductionContactMe {
     border-top: 3px darkslateblue solid;
     font-weight: bold;
@@ -113,14 +115,14 @@
     align-items: flex-start;
     line-height: normal;
     font-size: 1.5rem; }
-  /* line 53, public/sass/_introduction.scss */
+  /* line 57, public/sass/_introduction.scss */
   .introductionWrapper .socialMedia {
     width: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px; }
-  /* line 61, public/sass/_introduction.scss */
+  /* line 65, public/sass/_introduction.scss */
   .introductionWrapper .socialMediaIcons {
     width: 50px; }
 
@@ -143,16 +145,42 @@
     flex-wrap: wrap; }
   /* line 19, public/sass/_territories.scss */
   .territoriesWrapper .territoriesImg {
-    width: 400px;
+    width: 350px;
     height: 300px;
     border: double 2px black;
     box-shadow: 10px 10px 30px black;
-    border-radius: 20%;
+    border-radius: 10%;
     object-fit: cover; }
   /* line 28, public/sass/_territories.scss */
   .territoriesWrapper .territoriesObject {
     text-align: center;
     margin-left: 50px; }
+
+/* line 1, public/sass/_contactForm.scss */
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 300px; }
+  /* line 10, public/sass/_contactForm.scss */
+  .contactForm .contactButton:hover {
+    cursor: pointer; }
+  /* line 15, public/sass/_contactForm.scss */
+  .contactForm #formName {
+    display: flex; }
+  /* line 19, public/sass/_contactForm.scss */
+  .contactForm #formNumber {
+    display: none; }
+  /* line 23, public/sass/_contactForm.scss */
+  .contactForm #formEmail {
+    display: none; }
+  /* line 27, public/sass/_contactForm.scss */
+  .contactForm #formReason {
+    display: none; }
+  /* line 31, public/sass/_contactForm.scss */
+  .contactForm #formHow {
+    display: none; }
 
 /*
   Red Highlight: #B73225
@@ -165,7 +193,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 18, public/sass/main.scss */
+/* line 20, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;
