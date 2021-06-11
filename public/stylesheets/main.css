@@ -61,7 +61,7 @@
     text-transform: capitalize; }
   /* line 30, public/sass/_mainBackground.scss */
   .mainBackgroundImageWrapper .salesPitchBackground {
-    background-color: rgba(190, 190, 190, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding: 30px; }
 
