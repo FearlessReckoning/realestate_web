@@ -1,20 +1,57 @@
-.contactForm {
+.contactForm, form {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 300px;
-    font-size: 2rem;
- 
-    // .firstForm {
-    //     border: none;
-    // }
+    font-size: 3rem;
+    background-color: #004E7C;
+    color: white;
 
-    .firstFormStyle {
-        border: none;
-        border-bottom: darkblue;
+    
+    .contactFormHeader {
+        width: 60%;
+        text-align: center;
+        font-size: 1.5rem;
+        word-break: normal;
+    }
+    .contactFormContainer {
+        margin: auto;
+
     }
 
+    .firstFormStyle {
+        width: auto;
+        margin: auto;
+        height: auto;
+        font-size: 2rem;
+    
+        border: none;
+        border-radius: 5px;
+        border-bottom: #004E7C 2px ridge;
+        text-align: center;
+        box-shadow: 3px 3px 10px black;
+
+    }
+    
+
+    .firstForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: auto;
+        padding: 20px;
+        
+    }
+    ::placeholder {
+        color: #B73225;
+        opacity: .30;
+        letter-spacing: 5px;
+    }
 
     .secondForm {
         display: none;

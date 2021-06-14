@@ -160,22 +160,56 @@
     margin-left: 50px; }
 
 /* line 1, public/sass/_contactForm.scss */
-.contactForm {
+.contactForm, form {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 300px;
-  font-size: 2rem; }
-  /* line 13, public/sass/_contactForm.scss */
-  .contactForm .firstFormStyle {
+  font-size: 3rem;
+  background-color: #004E7C;
+  color: white; }
+  /* line 14, public/sass/_contactForm.scss */
+  .contactForm .contactFormHeader, form .contactFormHeader {
+    width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+    word-break: normal; }
+  /* line 20, public/sass/_contactForm.scss */
+  .contactForm .contactFormContainer, form .contactFormContainer {
+    margin: auto; }
+  /* line 25, public/sass/_contactForm.scss */
+  .contactForm .firstFormStyle, form .firstFormStyle {
+    width: auto;
+    margin: auto;
+    height: auto;
+    font-size: 2rem;
     border: none;
-    border-bottom: darkblue; }
-  /* line 19, public/sass/_contactForm.scss */
-  .contactForm .secondForm {
+    border-radius: 5px;
+    border-bottom: #004E7C 2px ridge;
+    text-align: center;
+    box-shadow: 3px 3px 10px black; }
+  /* line 40, public/sass/_contactForm.scss */
+  .contactForm .firstForm, form .firstForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    padding: 20px; }
+  /* line 50, public/sass/_contactForm.scss */
+  .contactForm ::placeholder, form ::placeholder {
+    color: #B73225;
+    opacity: .30;
+    letter-spacing: 5px; }
+  /* line 56, public/sass/_contactForm.scss */
+  .contactForm .secondForm, form .secondForm {
     display: none; }
-  /* line 23, public/sass/_contactForm.scss */
-  .contactForm .thirdForm {
+  /* line 60, public/sass/_contactForm.scss */
+  .contactForm .thirdForm, form .thirdForm {
     display: none; }
 
 /*
