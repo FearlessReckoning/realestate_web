@@ -28,6 +28,7 @@
                     <div class="socialMedia">
                         <a href="#"><img src="images/facebook.png" alt="Facebook Icon" class="socialMediaIcons"></a>
                         <a href="#"><img src="images/instagram.png" alt="Instagram Icon" class="socialMediaIcons"></a>
+                        <p><a href="#">Contact Me</a></p>
                     </div>
                 </div>
             </div>
@@ -63,34 +64,40 @@
 
 <div class="contactForm">
     <form action="#">
-        
+
         <div class="firstForm">
             <div class="buttonFormContainer">
-                <input type="text" id="forNameInput">
-                <button class="contactButton" id="formName">Press1</button>
+                <label for="forNameInput">
+                    Name</br><input type="text" id="forNameInput" class="firstFormStyle">
+                </label>
+            </div>
+            
+            <div class="buttonFormContainer">
+                <label for="forNumberInput">
+                    Number</br><input type="text" id="forNumberInput" class="firstFormStyle">
+                </label>
             </div>
             <div class="buttonFormContainer">
-                <input type="text" id="forNumberInput">
-                <button class="contactButton" id="formNumber">Press2</button>
+                <label for="forEmailInput">
+                    Email</br><input type="text" id="forEmailInput" class="firstFormStyle">
+                </label>
             </div>
-            <div class="buttonFormContainer">
-                <input type="text" id="forEmailInput">
-                <button class="contactButton" id="formEmail">Press3</button>
-            </div>
+            <input type="button" value="Button">
         </div>
 
         <div class="secondForm">
             <div class="buttonFormContainer">
-                <input type="text" id="forReasonInput">
-                <button class="contactButton" id="formReason">Press4</button>
+                <label for="forReasonInput"><textarea name="forReasonInput" id="forReasonInput" cols="30" rows="10" placeholder="Reason For Contacting Us Today?"></textarea></label>
             </div>
+            <input type="button" value="Button">
         </div>
 
         <div class="thirdForm">
             <div class="buttonFormContainer">
-                <input type="text" id="forHowInput">
-                <button class="contactButton" id="formHow">Press5</button>
+                <label for="forHowInput">How Did You Hear About Us?<input type="text" id="forHowInput"></label>
+                
             </div>
+            <button type="submit">Button</button>
         </div>
     </form>
 </div>

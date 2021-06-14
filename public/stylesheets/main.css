@@ -117,12 +117,14 @@
     font-size: 1.5rem; }
   /* line 57, public/sass/_introduction.scss */
   .introductionWrapper .socialMedia {
-    width: inherit;
+    width: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px; }
-  /* line 65, public/sass/_introduction.scss */
+    gap: 10px;
+    word-wrap: normal; }
+  /* line 67, public/sass/_introduction.scss */
   .introductionWrapper .socialMediaIcons {
     border-radius: 50%;
     width: 50px; }
@@ -163,24 +165,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 300px; }
-  /* line 10, public/sass/_contactForm.scss */
-  .contactForm .contactButton:hover {
-    cursor: pointer; }
-  /* line 15, public/sass/_contactForm.scss */
-  .contactForm #formName {
-    display: flex; }
+  margin-bottom: 300px;
+  font-size: 2rem; }
+  /* line 13, public/sass/_contactForm.scss */
+  .contactForm .firstFormStyle {
+    border: none;
+    border-bottom: darkblue; }
   /* line 19, public/sass/_contactForm.scss */
-  .contactForm #formNumber {
+  .contactForm .secondForm {
     display: none; }
   /* line 23, public/sass/_contactForm.scss */
-  .contactForm #formEmail {
-    display: none; }
-  /* line 27, public/sass/_contactForm.scss */
-  .contactForm #formReason {
-    display: none; }
-  /* line 31, public/sass/_contactForm.scss */
-  .contactForm #formHow {
+  .contactForm .thirdForm {
     display: none; }
 
 /*

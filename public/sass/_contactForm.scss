@@ -4,31 +4,26 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 300px;
-    
+    font-size: 2rem;
+ 
+    // .firstForm {
+    //     border: none;
+    // }
 
-    .contactButton {
-        &:hover {
-            cursor: pointer;
-        }
+    .firstFormStyle {
+        border: none;
+        border-bottom: darkblue;
     }
 
-    #formName{
-        display: flex;
-    }
 
-    #formNumber{
-        display: none;
-    };
-
-    #formEmail {
+    .secondForm {
         display: none;
     }
 
-    #formReason {
-        display: none;
+    .thirdForm {
+        display: none;;
     }
 
-    #formHow{
-        display: none;
-    }
+
+
 }
