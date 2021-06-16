@@ -1,37 +1,19 @@
-const contactButton = document.getElementsByClassName("contactButton");
+let firstForm = document.getElementById("firstForm");
+let firstFormSend = document.getElementById("firstFormSend");
 
+let secondForm = document.getElementById("secondForm");
+let secondFormSend = document.getElementById("secondFormSend");
 
-addGlobalEventListener("click", "contactButton", e => {
-    e.target.style.display = "none";
-})
+let thirdForm = document.getElementById("thirdForm");
 
-function addGlobalEventListener(type, selector, callback){
-    document.addEventListener(type, e => {
-        if(e.target.matches(selector)) callback(e)
-    });
+firstFormSend.addEventListener("click", (e) => {
+        firstForm.style.top = "20px";
+        firstForm.style.display = "none";
+        secondForm.style.display = "block";
+});
 
-}
-
-
-
-// document.getElementById("formName").addEventListener("click", (e)=> {
-//     e.currentTarget.style.display ="none";
-//     formNumber.style.display = "flex"
-// });
-// document.getElementById("formNumber").addEventListener("click", (e) => {
-//     e.currentTarget.style.display ="none";
-//     formEmail.style.display = "flex";
-// });
-// document.getElementById("formEmail").addEventListener("click", (e) => {
-//     e.currentTarget.style.display = "none";
-//     formReason.style.display = "flex";
-// });
-// document.getElementById("formReason").addEventListener("click", (e) => {
-//     e.currentTarget.style.display="none";
-//     formHow.style.display = "flex";
-// });
-// document.getElementById("formHow").addEventListener("click", (e) => {
-//     e.currentTarget.style.display = "none";
-// });
-
-
+secondFormSend.addEventListener("click", (e) => {
+    secondForm.style.display = "none";
+    thirdForm.style.display = "flex";
+    thirdForm.style.flexDirection = "column"
+});

@@ -70,42 +70,51 @@
         </div>
         <form action="#">
     
-            <div class="firstForm">
-                <div class="contactFormContainer">
+            <div class="firstForm" id="firstForm" 
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000">
+
+                <div class="contactFormContainer" id="contactFormContainer">
                     <label for="forNameInput">
-                        </br><input type="text" id="forNameInput" class="firstFormStyle" placeholder="Full Name">
+                        <input type="text" id="forNameInput" class="firstFormStyle" placeholder="Full Name">
                     </label>
                 </div>
                 
                 <div class="contactFormContainer">
                     <label for="forNumberInput">
-                        </br><input type="text" id="forNumberInput" class="firstFormStyle" placeholder="Phone Number">
+                        <input type="text" id="forNumberInput" class="firstFormStyle" placeholder="Phone Number">
                     </label>
                 </div>
                 <div class="contactFormContainer">
                     <label for="forEmailInput">
-                        </br><input type="text" id="forEmailInput" class="firstFormStyle" placeholder="Email Address">
+                        <input type="text" id="forEmailInput" class="firstFormStyle" placeholder="Email Address">
                     </label>
                 </div>
-                <input type="button" value="Button">
+                <input type="button" value="Button" id="firstFormSend">
             </div>
     
-            <div class="secondForm">
+            <div class="secondForm" id="secondForm">
                 <div class="contactFormContainer">
-                    <label for="forReasonInput"><textarea name="forReasonInput" id="forReasonInput" cols="30" rows="10" placeholder="Reason For Contacting Us Today?"></textarea></label>
+                    <label for="forReasonInput"><textarea name="forReasonInput" id="forReasonInput" class ="secondFormStyle" cols="30" rows="10" placeholder="Reason For Contacting Us Today?"></textarea></label>
                 </div>
-                <input type="button" value="Button">
+                <input type="button" value="Button" id="secondFormSend">
             </div>
     
-            <div class="thirdForm">
+            <div class="thirdForm" id="thirdForm">
                 <div class="contactFormContainer">
-                    <label for="forHowInput">How Did You Hear About Us?<input type="text" id="forHowInput"></label>
+                    <label for="forHowInput"><input type="text" id="forHowInput" class="thirdFormStyle" placeholder="How Did You Hear About Us?"></label>
                     
                 </div>
-                <button type="submit">Button</button>
+                <button type="submit" id="submitFullForm">Button</button>
             </div>
         </form>
     </div>
 </section>
+
+<script>
+    AOS.init();
+</script>
 
 <script src="scripts/contactForm.js"></script>
