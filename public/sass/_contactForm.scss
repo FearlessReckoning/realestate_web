@@ -5,6 +5,9 @@
     border: 3px solid black;
     text-align: left;
     font-size: 2rem;
+    height: auto;
+
+
 
     .formIntroduction{
         text-align: center;
@@ -17,11 +20,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
         
     }
 
     .firstForm input[type="text"] {
         width: 300px;
+        height: 30px;
+        font-size: 1.2rem;
     }
 
 

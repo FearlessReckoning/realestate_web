@@ -33,6 +33,21 @@
     height: 80px;
     object-fit: contain; }
 
+/* line 1, public/sass/_buttonStyles.scss */
+.buttonStyle {
+  background-color: transparent;
+  color: white;
+  border: white 3px solid;
+  width: 130px;
+  height: 50px;
+  font-size: 1rem;
+  text-transform: uppercase; }
+  /* line 10, public/sass/_buttonStyles.scss */
+  .buttonStyle:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black; }
+
 /* line 1, public/sass/_mainBackground.scss */
 .mainBackgroundImageWrapper {
   width: 100%;
@@ -166,25 +181,29 @@
   width: 100%;
   border: 3px solid black;
   text-align: left;
-  font-size: 2rem; }
-  /* line 9, public/sass/_contactForm.scss */
+  font-size: 2rem;
+  height: auto; }
+  /* line 12, public/sass/_contactForm.scss */
   .formContainer .formIntroduction {
     text-align: center;
     margin-bottom: 100px; }
-  /* line 14, public/sass/_contactForm.scss */
+  /* line 17, public/sass/_contactForm.scss */
   .formContainer .allFormWrappers {
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  /* line 23, public/sass/_contactForm.scss */
+    align-items: center;
+    padding: 20px; }
+  /* line 27, public/sass/_contactForm.scss */
   .formContainer .firstForm input[type="text"] {
-    width: 300px; }
-  /* line 28, public/sass/_contactForm.scss */
+    width: 300px;
+    height: 30px;
+    font-size: 1.2rem; }
+  /* line 34, public/sass/_contactForm.scss */
   .formContainer .secondForm {
     display: none; }
-  /* line 32, public/sass/_contactForm.scss */
+  /* line 38, public/sass/_contactForm.scss */
   .formContainer .thirdForm {
     display: none;
     text-align: center; }
@@ -200,7 +219,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 20, public/sass/main.scss */
+/* line 22, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;
