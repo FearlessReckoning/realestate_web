@@ -1,19 +1,16 @@
-let firstForm = document.getElementById("firstForm");
-let firstFormSend = document.getElementById("firstFormSend");
+let firstFormButton = document.getElementById("firstFormButton");
+let secondFormButton = document.getElementById("secondFormButton");
 
-let secondForm = document.getElementById("secondForm");
-let secondFormSend = document.getElementById("secondFormSend");
+let firstFormWrapper = document.getElementById("firstFormWrapper");
+let secondFormWrapper = document.getElementById("secondFormWrapper");
+let thirdFormWrapper =document.getElementById("thirdFormWrapper");
 
-let thirdForm = document.getElementById("thirdForm");
-
-firstFormSend.addEventListener("click", (e) => {
-        firstForm.style.top = "20px";
-        firstForm.style.display = "none";
-        secondForm.style.display = "block";
+firstFormButton.addEventListener("click", () => {
+    firstFormWrapper.style.display = "none";
+    secondFormWrapper.style.display = "flex";
 });
 
-secondFormSend.addEventListener("click", (e) => {
-    secondForm.style.display = "none";
-    thirdForm.style.display = "flex";
-    thirdForm.style.flexDirection = "column"
-});
+secondFormButton.addEventListener("click", () => {
+    secondFormWrapper.style.display = "none";
+    thirdFormWrapper.style.display = "flex";
+})

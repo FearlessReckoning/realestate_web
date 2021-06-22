@@ -62,56 +62,61 @@
     </section>
 </main>
 
-<section>
-    <div class="contactForm">
-        <div class="contactFormHeader">
-            <h1>Set up a meeting!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ad commodi molestiae ex aliquid vero laudantium fugit magni ducimus quisquam.</p>
-        </div>
-        <form action="#">
-    
-            <div class="firstForm" id="firstForm" 
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="1000">
+<section> <!--Form section-->
 
-                <div class="contactFormContainer" id="contactFormContainer">
-                    <label for="forNameInput">
-                        <input type="text" id="forNameInput" class="firstFormStyle" placeholder="Full Name">
-                    </label>
-                </div>
+
+    <Form>
+        <div class="formContainer">
+            <div class="formIntroduction">
+                <h1>Set Up a Meeting With Us</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur sequi beatae sed recusandae modi nisi similique, numquam architecto adipisci.
+            </div>
+            <div class="firstForm allFormWrappers" id="firstFormWrapper">
+                <label for="">
+                    Full Name:</br>
+                    <input type="text">
+                </label>
                 
-                <div class="contactFormContainer">
-                    <label for="forNumberInput">
-                        <input type="text" id="forNumberInput" class="firstFormStyle" placeholder="Phone Number">
-                    </label>
-                </div>
-                <div class="contactFormContainer">
-                    <label for="forEmailInput">
-                        <input type="text" id="forEmailInput" class="firstFormStyle" placeholder="Email Address">
-                    </label>
-                </div>
-                <input type="button" value="Button" id="firstFormSend">
+
+                <label for="">
+                    Email Address:</br>
+                    <input type="text">
+                </label>
+
+                <label for="">
+                    Phone Number:</br>
+                    <input type="text">
+                </label></br>
+                <input type="button" id="firstFormButton" value="Submit">
+                
             </div>
-    
-            <div class="secondForm" id="secondForm">
-                <div class="contactFormContainer">
-                    <label for="forReasonInput"><textarea name="forReasonInput" id="forReasonInput" class ="secondFormStyle" cols="30" rows="10" placeholder="Reason For Contacting Us Today?"></textarea></label>
-                </div>
-                <input type="button" value="Button" id="secondFormSend">
-            </div>
-    
-            <div class="thirdForm" id="thirdForm">
-                <div class="contactFormContainer">
-                    <label for="forHowInput"><input type="text" id="forHowInput" class="thirdFormStyle" placeholder="How Did You Hear About Us?"></label>
+
+            <div class="secondForm allFormWrappers" id="secondFormWrapper">
+                How Did You Hear About Us?
+                <label for="">
                     
-                </div>
-                <button type="submit" id="submitFullForm">Button</button>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label></br>
+                <input type="button" id="secondFormButton" value="Submit">
+
             </div>
-        </form>
-    </div>
+
+            <div class="thirdForm allFormWrappers" id="thirdFormWrapper">
+                <label for="">
+                    Best Way To Contact You?</br>
+                    <input type="button" value="Call">
+                    <input type="button" value="Text">
+                    <input type="button" value="Email">
+                </label></br>
+
+
+            </div>
+        </div>
+    </form>
 </section>
+
+
+
 
 <script>
     AOS.init();
