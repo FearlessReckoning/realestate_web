@@ -82,7 +82,7 @@
 
 /* line 1, public/sass/_introduction.scss */
 .introductionWrapper {
-  padding: 100px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -144,6 +144,22 @@
     border-radius: 50%;
     width: 50px; }
 
+@media only screen and (max-width: 1065px) {
+  /* line 75, public/sass/_introduction.scss */
+  .introductionWrapper {
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+    /* line 80, public/sass/_introduction.scss */
+    .introductionWrapper .introductionName {
+      text-align: center; }
+    /* line 84, public/sass/_introduction.scss */
+    .introductionWrapper .joseIntroduction {
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+      text-align: center; } }
+
 /* line 1, public/sass/_territories.scss */
 .territoriesWrapper {
   width: 80%;
@@ -173,6 +189,12 @@
   .territoriesWrapper .territoriesObject {
     text-align: center;
     margin-left: 50px; }
+  /* line 33, public/sass/_territories.scss */
+  .territoriesWrapper .allListings {
+    text-align: center; }
+  /* line 37, public/sass/_territories.scss */
+  .territoriesWrapper .allListings a {
+    text-decoration: none; }
 
 /* line 1, public/sass/_contactForm.scss */
 .formContainer {
@@ -218,7 +240,6 @@
   align-items: center; }
   /* line 9, public/sass/_footer.scss */
   .footerWrapper .footerFigure {
-    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,7 +254,7 @@
     border-radius: 50%; }
   /* line 27, public/sass/_footer.scss */
   .footerWrapper .socialMediaFooter {
-    width: 70px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
