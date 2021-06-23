@@ -22,11 +22,11 @@
     align-items: center; }
   /* line 29, public/sass/_nav.scss */
   .navWrapper ul li {
-    font-size: 20px; }
+    font-size: 1.5rem; }
   /* line 33, public/sass/_nav.scss */
   .navWrapper ul li a {
     text-decoration: none;
-    color: black; }
+    color: white; }
   /* line 38, public/sass/_nav.scss */
   .navWrapper .realtorLogo {
     width: 200px;
