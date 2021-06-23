@@ -208,6 +208,37 @@
     display: none;
     text-align: center; }
 
+/* line 1, public/sass/_footer.scss */
+.footerWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  /* line 9, public/sass/_footer.scss */
+  .footerWrapper .footerFigure {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  /* line 17, public/sass/_footer.scss */
+  .footerWrapper .footerFigure h3 {
+    margin: auto; }
+  /* line 21, public/sass/_footer.scss */
+  .footerWrapper .joseStampImg {
+    margin: auto;
+    width: 80px;
+    border-radius: 50%; }
+  /* line 27, public/sass/_footer.scss */
+  .footerWrapper .socialMediaFooter {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; }
+
 /*
   Red Highlight: #B73225
 
@@ -219,7 +250,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 22, public/sass/main.scss */
+/* line 23, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;
