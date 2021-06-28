@@ -87,5 +87,10 @@
             margin: 0;
             text-align: center;
         }
+        .socialMedia {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
     }
 }

@@ -158,15 +158,19 @@
       width: 100% !important;
       padding: 0;
       margin: 0;
-      text-align: center; } }
+      text-align: center; }
+    /* line 90, public/sass/_introduction.scss */
+    .introductionWrapper .socialMedia {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row; } }
 
 /* line 1, public/sass/_territories.scss */
 .territoriesWrapper {
   width: 80%;
   height: auto;
   margin: auto;
-  margin-bottom: 300px;
-  /*Delete*/
+  margin-bottom: 100px;
   text-align: left; }
   /* line 8, public/sass/_territories.scss */
   .territoriesWrapper .territoriesHeader {

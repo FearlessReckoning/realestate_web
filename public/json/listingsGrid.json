@@ -1,0 +1,8 @@
+{
+    "listings": [
+        {"town": "Manahawkin", "style": "colonial", "fullBath": 2, "halfBath": 1,"squarefeet": "1000sf"},
+        {"town": "Bethlaham", "style": "bi-level", "fullBath": 1, "halfBath": 1,"squarefeet": "1200sf"},
+        {"town": "Toms River", "style": "colonial", "fullBath": 1, "halfBath": 1,"squarefeet": "1800sf"},
+        {"town": "Beachwood", "style": "french country", "fullBath": 3, "halfBath": 1,"squarefeet": "1500sf"}
+    ]
+}
