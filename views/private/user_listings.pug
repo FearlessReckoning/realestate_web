@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    p.
+        listings(private)
+    p
+        form(action="/users/" + user_id + "/listings/edit")
+            input(type="submit" value="Edit")
+        form(action="/users/" + user_id + "/listings/new")
+            input(type="submit" value="Create")
+    p
+        p.
+            list of listings here
+        table
+            each listing in listings
+                tr
+                    td
+                        label.
+                            !{listing}
+                    td
+                        form(action="/listings/" + listing)
+                            input(type="submit" value = "view")
+                    td
+                        form(action="/listings/" + listing + "/edit")
+                            input(type="submit" value = "edit")

@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    p.
+        listings_edit
+    form(action="/users/" + user_id + "/listings/new")
+        input(type="submit" value="Create")
+    p
+        p.
+            list of listings here
+        table
+            each listing in listings
+                tr
+                    td
+                        label.
+                            !{listing}
+                    td
+                        button.
+                            remove

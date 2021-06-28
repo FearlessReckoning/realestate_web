@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    p.
+        listing_edit(private)
+    - if (listing)
+        p.
+            (public) listing
+        p.
+            this is a listing..
+        label.
+            !{listing.address}
+    - else
+        p.
+            listing doesn't seem to exist..

@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    p
+        p.
+            list of listings here
+        table
+            each listing in listings
+                tr
+                    td
+                        label.
+                            !{listing}
+                    td
+                        form(action="/listings/" + listing)
+                            input(type="submit" value = "view")

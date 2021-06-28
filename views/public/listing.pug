@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    - if (listing)
+        p.
+            (public) listing
+        p.
+            this is a listing..
+        label.
+            !{listing.address}
+    - else
+        p.
+            listing doesn't seem to exist..
