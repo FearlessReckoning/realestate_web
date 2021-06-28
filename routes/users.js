@@ -19,35 +19,69 @@ router.post('/login', function(req, res, next) {
 });
 
 router.get('/:user_id/listings', function(req, res, next) {
-    api_requests.get_remote_listings(req.params.user_id,
-    function(data){
-        process.stdout.write(data)
-        // res.render('public/user_listings', {listings: data });
-        res.render('private/user_listings', { user_id: req.params.user_id, listings: data});
-    },
-    function(){
-        res.send("{}");
-    });
+    // TODO this should swap between public and private views based on if the user is logged in
+    var logged_in = true;
+
+
+    if (logged_in)
+    {
+        api_requests.get_remote_listings(req.params.user_id,
+        function(data){
+            process.stdout.write(data)
+            // res.render('public/user_listings', {listings: data });
+            res.render('private/user_listings', { user_id: req.params.user_id, listings: data});
+        },
+        function(){
+            res.send("{}");
+        });
+    }
+    else
+    {
+        api_requests.get_remote_listings(req.params.user_id,
+        function(data){
+            process.stdout.write(data)
+            // res.render('public/user_listings', {listings: data });
+            res.render('public/user_listings', { user_id: req.params.user_id, listings: data});
+        },
+        function(){
+            res.send("{}");
+        });
+    }
 });
 
 router.get('/:user_id/listings/new', function(req, res, next) {
-    // if we are logged in
-    res.render('private/user_listings_new', {user_id: req.params.user_id});
+    // TODO this should only work if we are logged in.
+    var logged_in = true;
+
+
+    if (logged_in)
+    {
+        res.render('private/user_listings_new', {user_id: req.params.user_id});
+    }
+    else
+    {
+        res.send("user isn't logged in");
+    }
 });
 
 router.get('/:user_id/listings/edit', function(req, res, next) {
-    // if we are logged in
-    // res.render('private/user_listings_edit', {});
-
-    api_requests.get_remote_listings(req.params.user_id,
-    function(data){
-        // process.stdout.write(data)
-        // res.render('public/user_listings', {listings: data });
-        res.render('private/user_listings_edit', { user_id: req.params.user_id, listings: data});
-    },
-    function(){
-        res.send("{}");
-    });
-
+    // TODO this should only work if we are logged in.
+    var logged_in = true;
+    if (logged_in)
+    {
+        api_requests.get_remote_listings(req.params.user_id,
+        function(data){
+            // process.stdout.write(data)
+            // res.render('public/user_listings', {listings: data });
+            res.render('private/user_listings_edit', { user_id: req.params.user_id, listings: data});
+        },
+        function(){
+            res.send("{}");
+        });
+    }
+    else
+    {
+        res.send("user isn't logged in");
+    }
 });
 module.exports = router;
