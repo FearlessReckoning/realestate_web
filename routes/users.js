@@ -56,7 +56,18 @@ router.get('/:user_id/listings/new', function(req, res, next) {
 
     if (logged_in)
     {
-        res.render('private/user_listings_new', {user_id: req.params.user_id});
+        api_requests.new_listing(req.params.user_id,
+        function(data){
+            process.stdout.write(data);
+            var listing_id = data.listing_id;
+            // res.render("private/listing_edit", { listing_id: listing_id});
+            res.redirect("/listings/" + listing_id + "/edit");
+        },
+        function(){
+            res.send("{}");
+        });
+
+        // res.render('private/user_listings_new', {user_id: req.params.user_id});
     }
     else
     {
