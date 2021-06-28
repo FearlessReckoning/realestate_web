@@ -1,11 +1,9 @@
 extends ../layout
 
 block content
+    p.
+        (public) listing
     - if (listing)
-        p.
-            (public) listing
-        p.
-            this is a listing..
         label.
             !{listing.address}
     - else
