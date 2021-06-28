@@ -1,5 +1,9 @@
-extends layout
+extends ../layout
 
 block content
     p.
         listings_new
+    //- form(action="/listings/new")
+    //-     input(type="submit" value="Save")
+    button.
+        save?.. how do we want this to work?
