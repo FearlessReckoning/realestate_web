@@ -260,6 +260,61 @@
     justify-content: center;
     margin-left: 10px; }
 
+/* line 1, public/sass/_about.scss */
+.aboutMeWrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px; }
+  /* line 12, public/sass/_about.scss */
+  .aboutMeWrapper .aboutMeIntroContainer {
+    padding: 10px;
+    color: black; }
+  /* line 17, public/sass/_about.scss */
+  .aboutMeWrapper .aboutMeImg {
+    box-shadow: 3px 3px 10px black;
+    height: 800px;
+    object-fit: cover; }
+
+/* line 27, public/sass/_about.scss */
+.accomplishmentsWrapper {
+  width: 100%;
+  margin-top: 200px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 10px black; }
+  /* line 37, public/sass/_about.scss */
+  .accomplishmentsWrapper .accomplishmentsContainer {
+    width: 25%;
+    height: 200px;
+    padding: 50px;
+    text-align: center; }
+  /* line 46, public/sass/_about.scss */
+  .accomplishmentsWrapper .accomplishmentsContainer h1 {
+    color: #8b0000; }
+  /* line 50, public/sass/_about.scss */
+  .accomplishmentsWrapper .myBackgroundContainer {
+    text-align: left; }
+  /* line 54, public/sass/_about.scss */
+  .accomplishmentsWrapper .myBackgroundContainer h1 {
+    text-align: center; }
+
+@media screen and (max-width: 926px) {
+  /* line 64, public/sass/_about.scss */
+  .accomplishmentsWrapper {
+    flex-direction: column; }
+    /* line 67, public/sass/_about.scss */
+    .accomplishmentsWrapper .accomplishmentsContainer {
+      width: 45%;
+      height: auto; } }
+
 /*
   Red Highlight: #B73225
 
@@ -271,7 +326,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 23, public/sass/main.scss */
+/* line 24, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;

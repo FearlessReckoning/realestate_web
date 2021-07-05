@@ -1,0 +1,74 @@
+.aboutMeWrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+
+
+    .aboutMeIntroContainer{
+        padding: 10px;
+        color: black;
+    }
+
+    .aboutMeImg{
+        box-shadow: 3px 3px 10px black;
+
+        height: 800px;
+        object-fit: cover;
+    }
+
+
+}
+
+.accomplishmentsWrapper {
+    width: 100%;
+    margin-top: 200px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 10px black;
+
+    .accomplishmentsContainer{
+        width: 25%;
+        height: 200px;
+        padding: 50px;
+        text-align: center;
+        
+
+    }
+
+    .accomplishmentsContainer h1 {
+        color: #8b0000;
+    }
+    
+    .myBackgroundContainer {
+        text-align: left;
+    }
+
+    .myBackgroundContainer h1 {
+        text-align: center;
+    }
+
+}
+
+
+//926
+
+@media screen and (max-width: 926px) {
+    .accomplishmentsWrapper {
+        flex-direction: column;
+
+        .accomplishmentsContainer {
+            width: 45%;
+            height: auto;
+        }
+    }
+
+
+}
