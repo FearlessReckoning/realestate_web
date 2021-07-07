@@ -1,0 +1,60 @@
+.logoWrapper {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;  
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+
+
+    .logoContainer {
+        position: relative;
+        width: 50%;
+        margin: auto;
+        text-align: right;
+
+    }
+
+
+
+    .logoFont{
+        position: relative;
+        width: 100px;
+        height: 100%;
+        font-family: 'Bevan', cursive;
+        // box-sizing: border-box;
+        font-size: 1.5rem;
+        letter-spacing: 20px;
+        border-top: 3px inset $matching-blue;
+        border-right: 3px inset $matching-blue;
+        font-weight: 600;
+        background-color: rgba(110,179,219,0.1);
+        padding: 2px;
+        text-align: right;
+
+    }
+
+    .logoFont:before{
+        position: absolute;
+        content: "JM";
+        right: 3.5px;
+        color: $matching-blue;
+    }
+
+    .logoFont:after {
+        content: "Realty";
+        // background-color: rgba(110,179,219,0.3);
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        font-size: 0.9rem;
+        top: 100%;
+        left: 100%;
+        border-top: 3px inset $matching-blue;
+        border-right: 3px inset $matching-blue;
+    }
+
+
+}
+

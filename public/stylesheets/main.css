@@ -3,35 +3,78 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
   background-color: #004E7C;
   width: 100%;
   height: 100px; }
-  /* line 11, public/sass/_nav.scss */
+  /* line 13, public/sass/_nav.scss */
   .navWrapper .navLinks {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end; }
-  /* line 19, public/sass/_nav.scss */
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-family: "Bevan", cursive;
+    font-size: 1.4rem; }
+  /* line 26, public/sass/_nav.scss */
   .navWrapper .navLinks ul {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
-  /* line 29, public/sass/_nav.scss */
-  .navWrapper ul li {
-    font-size: 1.5rem; }
-  /* line 33, public/sass/_nav.scss */
+    align-items: flex-end; }
+  /* line 40, public/sass/_nav.scss */
   .navWrapper ul li a {
     text-decoration: none;
     color: white; }
-  /* line 38, public/sass/_nav.scss */
-  .navWrapper .realtorLogo {
-    width: 200px;
-    height: 80px;
-    object-fit: contain; }
+
+/* line 1, public/sass/_logo.scss */
+.logoWrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-transform: uppercase; }
+  /* line 11, public/sass/_logo.scss */
+  .logoWrapper .logoContainer {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    text-align: right; }
+  /* line 21, public/sass/_logo.scss */
+  .logoWrapper .logoFont {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    font-family: 'Bevan', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 20px;
+    border-top: 3px inset #6EB3DB;
+    border-right: 3px inset #6EB3DB;
+    font-weight: 600;
+    background-color: rgba(110, 179, 219, 0.1);
+    padding: 2px;
+    text-align: right; }
+  /* line 38, public/sass/_logo.scss */
+  .logoWrapper .logoFont:before {
+    position: absolute;
+    content: "JM";
+    right: 3.5px;
+    color: #6EB3DB; }
+  /* line 45, public/sass/_logo.scss */
+  .logoWrapper .logoFont:after {
+    content: "Realty";
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    font-size: 0.9rem;
+    top: 100%;
+    left: 100%;
+    border-top: 3px inset #6EB3DB;
+    border-right: 3px inset #6EB3DB; }
 
 /* line 1, public/sass/_buttonStyles.scss */
 .buttonStyle {
@@ -334,7 +377,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 26, public/sass/main.scss */
+/* line 28, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;
