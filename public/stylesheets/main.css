@@ -96,7 +96,7 @@
     flex-direction: column; }
   /* line 16, public/sass/_introduction.scss */
   .introductionWrapper .joseImg {
-    width: 20rem;
+    width: 15rem;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #B73225;
     border: 3px double #B73225; }
@@ -116,7 +116,7 @@
     font-weight: 300;
     line-height: 5rem;
     text-align: left; }
-  /* line 42, public/sass/_introduction.scss */
+  /* line 44, public/sass/_introduction.scss */
   .introductionWrapper .introductionContactMe {
     border-top: 3px darkslateblue solid;
     font-weight: bold;
@@ -130,7 +130,7 @@
     align-items: flex-start;
     line-height: normal;
     font-size: 1.5rem; }
-  /* line 57, public/sass/_introduction.scss */
+  /* line 59, public/sass/_introduction.scss */
   .introductionWrapper .socialMedia {
     width: auto;
     display: flex;
@@ -139,21 +139,21 @@
     align-items: center;
     gap: 10px;
     word-wrap: normal; }
-  /* line 67, public/sass/_introduction.scss */
+  /* line 69, public/sass/_introduction.scss */
   .introductionWrapper .socialMediaIcons {
     border-radius: 50%;
     width: 50px; }
 
 @media only screen and (max-width: 1065px) {
-  /* line 75, public/sass/_introduction.scss */
+  /* line 77, public/sass/_introduction.scss */
   .introductionWrapper {
     width: 100%;
     justify-content: center;
     align-items: center; }
-    /* line 80, public/sass/_introduction.scss */
+    /* line 82, public/sass/_introduction.scss */
     .introductionWrapper .introductionName {
       text-align: center; }
-    /* line 84, public/sass/_introduction.scss */
+    /* line 86, public/sass/_introduction.scss */
     .introductionWrapper .joseIntroduction {
       width: 100% !important;
       padding: 0;
@@ -263,54 +263,62 @@
 /* line 1, public/sass/_about.scss */
 .aboutMeWrapper {
   width: 100%;
-  text-align: center;
+  height: 30rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 20px; }
-  /* line 12, public/sass/_about.scss */
-  .aboutMeWrapper .aboutMeIntroContainer {
-    padding: 10px;
-    color: black; }
-  /* line 17, public/sass/_about.scss */
+  background-color: rgba(0, 78, 124, 0.5); }
+  /* line 10, public/sass/_about.scss */
+  .aboutMeWrapper .realtorQuote {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 80%;
+    font-family: 'Cookie', cursive; }
+  /* line 18, public/sass/_about.scss */
+  .aboutMeWrapper .aboutMeIntro {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box; }
+  /* line 26, public/sass/_about.scss */
+  .aboutMeWrapper .aboutMeImgWrapper {
+    box-sizing: border-box;
+    width: 100%; }
+  /* line 31, public/sass/_about.scss */
   .aboutMeWrapper .aboutMeImg {
-    box-shadow: 3px 3px 10px black;
-    height: 800px;
-    object-fit: cover; }
+    width: 70%; }
 
-/* line 27, public/sass/_about.scss */
+/* line 42, public/sass/_about.scss */
 .accomplishmentsWrapper {
   width: 100%;
-  margin-top: 200px;
   color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   box-shadow: 3px 3px 10px black; }
-  /* line 37, public/sass/_about.scss */
+  /* line 53, public/sass/_about.scss */
   .accomplishmentsWrapper .accomplishmentsContainer {
     width: 25%;
     height: 200px;
     padding: 50px;
     text-align: center; }
-  /* line 46, public/sass/_about.scss */
+  /* line 62, public/sass/_about.scss */
   .accomplishmentsWrapper .accomplishmentsContainer h1 {
     color: #8b0000; }
-  /* line 50, public/sass/_about.scss */
+  /* line 66, public/sass/_about.scss */
   .accomplishmentsWrapper .myBackgroundContainer {
     text-align: left; }
-  /* line 54, public/sass/_about.scss */
+  /* line 70, public/sass/_about.scss */
   .accomplishmentsWrapper .myBackgroundContainer h1 {
     text-align: center; }
 
 @media screen and (max-width: 926px) {
-  /* line 64, public/sass/_about.scss */
+  /* line 80, public/sass/_about.scss */
   .accomplishmentsWrapper {
     flex-direction: column; }
-    /* line 67, public/sass/_about.scss */
+    /* line 83, public/sass/_about.scss */
     .accomplishmentsWrapper .accomplishmentsContainer {
       width: 45%;
       height: auto; } }
@@ -326,7 +334,7 @@
 
   Lighter Grey: #DCE1E3
 */
-/* line 24, public/sass/main.scss */
+/* line 26, public/sass/main.scss */
 body {
   font-family: "Open Sans",sans-serif;
   padding: 0px;

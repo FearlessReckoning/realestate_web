@@ -5,7 +5,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    
+        
     .joseImgWrapper {
         display: flex;
         justify-content: center;
@@ -14,7 +14,7 @@
 
     }
     .joseImg {
-        width: 20rem;
+        width: 15rem;
         border-radius: 50%;
         box-shadow: 1px 1px 10px #B73225;
         border: 3px double #B73225;
@@ -38,6 +38,8 @@
         line-height: 5rem;
         text-align: left;
     }
+
+
 
     .introductionContactMe{
         border-top: 3px darkslateblue solid;

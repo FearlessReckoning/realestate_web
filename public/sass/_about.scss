@@ -1,38 +1,54 @@
 .aboutMeWrapper {
     width: 100%;
-    text-align: center;
+    height: 30rem;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 20px;
+    background-color: rgba(0,78,124,0.5);
 
-
-    .aboutMeIntroContainer{
-        padding: 10px;
-        color: black;
-    }
-
-    .aboutMeImg{
-        box-shadow: 3px 3px 10px black;
-
-        height: 800px;
-        object-fit: cover;
+    .realtorQuote {
+        margin: auto;
+        font-size: 1.5rem;
+        width: 80%;
+        font-family: 'Cookie', cursive;
     }
 
 
+    .aboutMeIntro {
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+        box-sizing: border-box;
+        
+    }
+
+    .aboutMeImgWrapper{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .aboutMeImg {
+        width: 70%;
+    }
 }
+
+
+
+
+
+
 
 .accomplishmentsWrapper {
     width: 100%;
-    margin-top: 200px;
     color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     box-shadow: 3px 3px 10px black;
+
+
 
     .accomplishmentsContainer{
         width: 25%;
