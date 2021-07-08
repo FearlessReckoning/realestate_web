@@ -25,11 +25,27 @@
     }
 
     .socialMediaFooter {
-        width: 40px;
+        box-sizing: border-box;
+        gap: 20px;
+        width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 10px;
 
+
+    }
+
+    .footerLogoImg {
+        width: 40px;
+        border-radius: 50%;
+        border: 3px solid white;
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+            background-color: $matching-blue;
+            border: 3px solid $matching-yellow;
+            @include background-color-fade(backgroundColorFade, $matching-blue);
+        }
     }
 }

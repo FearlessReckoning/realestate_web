@@ -1,0 +1,33 @@
+
+// Mixin for changing color on hover
+@mixin background-color-fade($name, $color){
+    animation-name: $name;
+    animation-delay: 0s;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+
+    @keyframes #{$name}{
+        0% {
+            background-color: white;
+        }
+        80%{
+            background-color: $color;
+            transform: rotate(35deg);
+        }
+    }
+}
+
+// //Mixin for animating borders
+// @mixin border-animation($name, $color){
+//     animation-name: $name;
+//     animation-delay: 0s;
+//     animation-duration: 3s;
+//     animation-timing-function: ease;
+
+//     @keyframes #{$name}{
+//         10% {
+//             transform: rotate(35deg);
+//         }
+
+// }
+// }

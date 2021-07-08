@@ -69,6 +69,14 @@
     .socialMediaIcons{
         border-radius: 50%;
         width: 50px;
+        // border: 1px solid $matching-black;
+
+        &:hover {
+            // border: 3px solid $matching-yellow;
+            background-color: $matching-blue;
+            border: 3px solid $matching-yellow;
+            @include background-color-fade(backgroundColorFade, $matching-red);
+        }
     }
 }
 

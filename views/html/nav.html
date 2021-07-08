@@ -3,7 +3,10 @@
         <div class="navWrapper">
             <div class="logoWrapper">
                 <div class="logoContainer">
-                    <p class="logoFont">JM</p>
+                    <p class="logoFont"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000">JM</p>
                 </div>
                 <!-- <figure>
                     <img src="images/realtorLogo.jpg" class="realtorLogo" alt="Logo" title="Jose Martir Realestate Agent">
@@ -11,12 +14,36 @@
             </div>
             <div class="navLinks">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/users/1/listings">Listings</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/users/login">Login</a></li>
+                    <li data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <a href="/users/1/listings">Listings</a>
+                    </li>
+
+                    <li data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <a href="/about">About</a>
+                    </li>
+
+
+                    <li data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                        <a href="/users/login">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+<script>
+    AOS.init();
+</script>
