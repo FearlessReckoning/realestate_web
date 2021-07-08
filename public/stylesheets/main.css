@@ -96,14 +96,15 @@
 .mainBackgroundImageWrapper {
   width: 100%;
   height: 500px;
-  position: relative; }
-  /* line 7, public/sass/_mainBackground.scss */
+  position: relative;
+  box-sizing: border-box; }
+  /* line 8, public/sass/_mainBackground.scss */
   .mainBackgroundImageWrapper .mainBackgroundImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute; }
-  /* line 14, public/sass/_mainBackground.scss */
+  /* line 15, public/sass/_mainBackground.scss */
   .mainBackgroundImageWrapper .salesPitch {
     color: #FFFFF0;
     position: relative;
@@ -118,7 +119,7 @@
     text-align: center;
     line-height: 5rem;
     text-transform: capitalize; }
-  /* line 30, public/sass/_mainBackground.scss */
+  /* line 31, public/sass/_mainBackground.scss */
   .mainBackgroundImageWrapper .salesPitchBackground {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -215,6 +216,8 @@
     /* line 94, public/sass/_introduction.scss */
     .introductionWrapper .joseIntroduction {
       width: 100% !important;
+      box-sizing: border-box;
+      padding: 20px;
       padding: 0;
       margin: 0;
       text-align: center; } }
@@ -423,6 +426,6 @@ body {
   padding: 0px;
   border: 0px;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-family: 'Playfair Display', serif;
   color: #004E7C; }
