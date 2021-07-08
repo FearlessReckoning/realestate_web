@@ -219,7 +219,15 @@
       padding: 20px;
       padding: 0;
       margin: 0;
-      text-align: center; } }
+      text-align: center; }
+    /* line 103, public/sass/_introduction.scss */
+    .introductionWrapper .introductionSentence {
+      padding: 20px; }
+    /* line 106, public/sass/_introduction.scss */
+    .introductionWrapper .introductionContactMe {
+      width: 50%;
+      margin: auto;
+      align-items: flex-start; } }
 
 /* line 1, public/sass/_territories.scss */
 .territoriesWrapper {
