@@ -303,25 +303,27 @@
 .footerWrapper {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #0F0C02;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
-  /* line 9, public/sass/_footer.scss */
+  align-items: center;
+  text-shadow: 0.5px -0.5px 1px white;
+  color: #004E7C; }
+  /* line 11, public/sass/_footer.scss */
   .footerWrapper .footerFigure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
-  /* line 17, public/sass/_footer.scss */
+  /* line 19, public/sass/_footer.scss */
   .footerWrapper .footerFigure h3 {
     margin: auto; }
-  /* line 21, public/sass/_footer.scss */
+  /* line 23, public/sass/_footer.scss */
   .footerWrapper .joseStampImg {
     margin: auto;
     width: 80px;
     border-radius: 50%; }
-  /* line 27, public/sass/_footer.scss */
+  /* line 29, public/sass/_footer.scss */
   .footerWrapper .socialMediaFooter {
     box-sizing: border-box;
     gap: 20px;
@@ -330,13 +332,13 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px; }
-  /* line 39, public/sass/_footer.scss */
+  /* line 41, public/sass/_footer.scss */
   .footerWrapper .footerLogoImg {
     width: 40px;
     border-radius: 50%;
     border: 3px solid white;
     background-color: white; }
-    /* line 44, public/sass/_footer.scss */
+    /* line 46, public/sass/_footer.scss */
     .footerWrapper .footerLogoImg:hover {
       cursor: pointer;
       background-color: #6EB3DB;
@@ -356,33 +358,37 @@
 /* line 1, public/sass/_about.scss */
 .aboutMeWrapper {
   width: 100%;
-  height: 30rem;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 78, 124, 0.5); }
   /* line 10, public/sass/_about.scss */
-  .aboutMeWrapper .realtorQuote {
-    margin: auto;
-    font-size: 1.5rem;
-    width: 80%;
-    font-family: 'Cookie', cursive; }
-  /* line 18, public/sass/_about.scss */
   .aboutMeWrapper .aboutMeIntro {
     width: 100%;
     text-align: center;
     padding: 50px;
     box-sizing: border-box; }
-  /* line 26, public/sass/_about.scss */
+  /* line 19, public/sass/_about.scss */
+  .aboutMeWrapper .realtorQuote {
+    width: 100%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    word-spacing: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Cookie', cursive; }
+  /* line 33, public/sass/_about.scss */
   .aboutMeWrapper .aboutMeImgWrapper {
     box-sizing: border-box;
     width: 100%; }
-  /* line 31, public/sass/_about.scss */
+  /* line 38, public/sass/_about.scss */
   .aboutMeWrapper .aboutMeImg {
     width: 70%; }
 
-/* line 42, public/sass/_about.scss */
+/* line 49, public/sass/_about.scss */
 .accomplishmentsWrapper {
   width: 100%;
   color: black;
@@ -391,30 +397,37 @@
   justify-content: space-around;
   align-items: center;
   box-shadow: 3px 3px 10px black; }
-  /* line 53, public/sass/_about.scss */
+  /* line 60, public/sass/_about.scss */
   .accomplishmentsWrapper .accomplishmentsContainer {
     width: 25%;
     height: 200px;
     padding: 50px;
     text-align: center; }
-  /* line 62, public/sass/_about.scss */
+  /* line 69, public/sass/_about.scss */
   .accomplishmentsWrapper .accomplishmentsContainer h1 {
     color: #8b0000; }
-  /* line 66, public/sass/_about.scss */
+  /* line 73, public/sass/_about.scss */
   .accomplishmentsWrapper .myBackgroundContainer {
     text-align: left; }
-  /* line 70, public/sass/_about.scss */
+  /* line 77, public/sass/_about.scss */
   .accomplishmentsWrapper .myBackgroundContainer h1 {
     text-align: center; }
 
 @media screen and (max-width: 926px) {
-  /* line 80, public/sass/_about.scss */
+  /* line 87, public/sass/_about.scss */
   .accomplishmentsWrapper {
     flex-direction: column; }
-    /* line 83, public/sass/_about.scss */
+    /* line 90, public/sass/_about.scss */
     .accomplishmentsWrapper .accomplishmentsContainer {
       width: 45%;
       height: auto; } }
+
+@media screen and (max-width: 500px) {
+  /* line 100, public/sass/_about.scss */
+  .aboutMeWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }
 
 /*
   Red Highlight: #B73225
