@@ -30,6 +30,10 @@
   .navWrapper ul li a {
     text-decoration: none;
     color: white; }
+    /* line 45, public/sass/_nav.scss */
+    .navWrapper ul li a:hover {
+      color: #6EB3DB;
+      text-shadow: 1px -1px 4px black; }
 
 /* line 1, public/sass/_logo.scss */
 .logoWrapper {
@@ -307,23 +311,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-shadow: 0.5px -0.5px 1px white;
-  color: #004E7C; }
+  color: white; }
   /* line 11, public/sass/_footer.scss */
   .footerWrapper .footerFigure {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
-  /* line 19, public/sass/_footer.scss */
+  /* line 20, public/sass/_footer.scss */
   .footerWrapper .footerFigure h3 {
     margin: auto; }
-  /* line 23, public/sass/_footer.scss */
+  /* line 24, public/sass/_footer.scss */
   .footerWrapper .joseStampImg {
     margin: auto;
     width: 80px;
     border-radius: 50%; }
-  /* line 29, public/sass/_footer.scss */
+  /* line 30, public/sass/_footer.scss */
   .footerWrapper .socialMediaFooter {
     box-sizing: border-box;
     gap: 20px;
@@ -332,13 +336,13 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px; }
-  /* line 41, public/sass/_footer.scss */
+  /* line 42, public/sass/_footer.scss */
   .footerWrapper .footerLogoImg {
     width: 40px;
     border-radius: 50%;
     border: 3px solid white;
     background-color: white; }
-    /* line 46, public/sass/_footer.scss */
+    /* line 47, public/sass/_footer.scss */
     .footerWrapper .footerLogoImg:hover {
       cursor: pointer;
       background-color: #6EB3DB;
@@ -374,10 +378,10 @@
   .aboutMeWrapper .realtorQuote {
     width: 100%;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 2rem;
     word-spacing: 0.5rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 3px;
     font-family: 'Cookie', cursive; }
   /* line 33, public/sass/_about.scss */

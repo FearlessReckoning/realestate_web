@@ -5,11 +5,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-shadow: 0.5px -0.5px 1px white;
-    color: $nav-bar;
+    // text-shadow: 0.3px -0.3px 0.1px $matching-red;
+    color: white;
 
     .footerFigure{
         // width: 200px;
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
