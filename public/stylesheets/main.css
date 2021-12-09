@@ -130,41 +130,46 @@
 
 /* line 1, public/sass/_introduction.scss */
 .introductionWrapper {
+  background-image: linear-gradient(to bottom, rgba(110, 179, 219, 0.8) 0%, rgba(110, 179, 219, 0.8) 100%), url("../images/realestatePhoto.jpeg");
+  background-position: bottom;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px; }
-  /* line 9, public/sass/_introduction.scss */
+  /* line 15, public/sass/_introduction.scss */
   .introductionWrapper .joseImgWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  /* line 16, public/sass/_introduction.scss */
+  /* line 22, public/sass/_introduction.scss */
   .introductionWrapper .joseImg {
     width: 15rem;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #B73225;
     border: 3px double #B73225; }
-  /* line 24, public/sass/_introduction.scss */
+  /* line 30, public/sass/_introduction.scss */
   .introductionWrapper .joseCompanyImg {
     width: 20rem; }
-  /* line 27, public/sass/_introduction.scss */
+  /* line 33, public/sass/_introduction.scss */
   .introductionWrapper .introductionName {
     text-align: left;
     font-weight: 900;
     font-size: 2.3rem; }
-  /* line 33, public/sass/_introduction.scss */
+  /* line 39, public/sass/_introduction.scss */
   .introductionWrapper .joseIntroduction {
     width: 60%;
     font-size: 2rem;
     letter-spacing: 3px;
     font-weight: 300;
-    line-height: 5rem;
+    line-height: 3rem;
     text-align: left; }
-  /* line 44, public/sass/_introduction.scss */
+  /* line 50, public/sass/_introduction.scss */
   .introductionWrapper .introductionContactMe {
     border-top: 3px darkslateblue solid;
     font-weight: bold;
@@ -178,7 +183,7 @@
     align-items: flex-start;
     line-height: normal;
     font-size: 1.5rem; }
-  /* line 59, public/sass/_introduction.scss */
+  /* line 65, public/sass/_introduction.scss */
   .introductionWrapper .socialMedia {
     width: auto;
     display: flex;
@@ -187,11 +192,11 @@
     align-items: center;
     gap: 10px;
     word-wrap: normal; }
-  /* line 69, public/sass/_introduction.scss */
+  /* line 75, public/sass/_introduction.scss */
   .introductionWrapper .socialMediaIcons {
     border-radius: 50%;
     width: 50px; }
-    /* line 74, public/sass/_introduction.scss */
+    /* line 80, public/sass/_introduction.scss */
     .introductionWrapper .socialMediaIcons:hover {
       background-color: #6EB3DB;
       border: 3px solid #C9C50A;
@@ -208,15 +213,15 @@
     transform: rotate(35deg); } }
 
 @media only screen and (max-width: 1065px) {
-  /* line 85, public/sass/_introduction.scss */
+  /* line 91, public/sass/_introduction.scss */
   .introductionWrapper {
     width: 100%;
     justify-content: center;
     align-items: center; }
-    /* line 90, public/sass/_introduction.scss */
+    /* line 96, public/sass/_introduction.scss */
     .introductionWrapper .introductionName {
       text-align: center; }
-    /* line 94, public/sass/_introduction.scss */
+    /* line 100, public/sass/_introduction.scss */
     .introductionWrapper .joseIntroduction {
       width: 100% !important;
       box-sizing: border-box;
@@ -224,10 +229,10 @@
       padding: 0;
       margin: 0;
       text-align: center; }
-    /* line 103, public/sass/_introduction.scss */
+    /* line 109, public/sass/_introduction.scss */
     .introductionWrapper .introductionSentence {
       padding: 20px; }
-    /* line 106, public/sass/_introduction.scss */
+    /* line 112, public/sass/_introduction.scss */
     .introductionWrapper .introductionContactMe {
       width: 50%;
       margin: auto;
